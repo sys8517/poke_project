@@ -8,6 +8,7 @@ import { useRecoilState } from "recoil";
 import { poketMonList } from "@/recoil/PokeList";
 import trans from "@/static/lang_list.json";
 import _ from "lodash";
+import "../static/fonts/font.css";
 
 export default function Home() {
   // const [pokemonData, setPokemonData] = useState<any[]>([]);

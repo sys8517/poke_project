@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import styles from "./PoketCard.module.css";
 
 export default function PoketCard({ id, name }: { id: number; name: string }) {
   const router = useRouter();
@@ -8,13 +9,13 @@ export default function PoketCard({ id, name }: { id: number; name: string }) {
   return (
     <>
       <div
-        style={{ border: "1px solid yellow" }}
+        className={styles.card}
         onClick={() => {
           router.push(`/detail/${id}`);
         }}
       >
         <img src={image}></img>
-        {name}
+        <span>{name}</span>
       </div>
     </>
   );
