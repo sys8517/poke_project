@@ -1,7 +1,8 @@
 .list_wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(200px, auto));
+  /* grid-template-rows: repeat(auto-fit, minmax(200px, auto)); */
+  grid-template-rows: auto;
   gap: 30px;
   box-sizing: border-box;
 }
